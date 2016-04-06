@@ -30,6 +30,7 @@
         var eventName = eventSelect.MPEventSelect('value'),
             propName  = propSelect.MPPropertySelect('value'),
             dateRange = dateSelect.MPDatepicker('value');
+            console.log("ryan");
 
         if (eventName) {
           MP.api.segment(eventName, propName, dateRange).done(function(results) {
